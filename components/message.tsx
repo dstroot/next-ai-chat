@@ -9,12 +9,14 @@ import type { Vote } from "@/lib/db/schema";
 
 import { DocumentToolCall, DocumentToolResult } from "./document";
 import {
-  ChevronDownIcon,
-  LoaderIcon,
+  // ChevronDownIcon,
+  // LoaderIcon,
   PencilEditIcon,
   UserIcon,
   SparklesIcon,
 } from "./icons";
+
+import { PencilLine, User, Sparkles } from "lucide-react";
 import { Markdown } from "./markdown";
 import { MessageActions } from "./message-actions";
 import { PreviewAttachment } from "./preview-attachment";
@@ -67,8 +69,9 @@ const PurePreviewMessage = ({
             }
           )}
         >
+          {/* Assistant Icon */}
           {message.role === "assistant" && (
-            <div className="size-8 flex items-center rounded-full justify-center ring-1 shrink-0 ring-border bg-background">
+            <div className="mt-1 size-8 flex items-center rounded-full justify-center border border-neutral-500">
               <div className="translate-y-px">
                 <SparklesIcon />
               </div>
@@ -113,16 +116,23 @@ const PurePreviewMessage = ({
                   </Tooltip>
                 )}
 
-                {/* USER MESSAGE */}
+                {/* TEXT MESSAGE */}
                 <div
-                  className={cn("flex flex-col gap-4", {
-                    "bg-muted px-3 py-2 rounded-xl": message.role === "user",
-                  })}
+                  // different formats for user and assistant messages
+                  className={cn(
+                    "flex flex-col gap-4 px-3 py-2 rounded-xl",
+                    {
+                      "bg-neutral-300": message.role === "user",
+                    },
+                    {
+                      "bg-muted": message.role === "assistant",
+                    }
+                  )}
                 >
                   <Markdown>{message.content as string}</Markdown>
                 </div>
                 {message.role === "user" && (
-                  <div className="size-8 flex items-center rounded-full justify-center ring-1 shrink-0 ring-border bg-background">
+                  <div className="mt-1 size-8 flex items-center rounded-full justify-center border border-neutral-500">
                     <div className="translate-y-px">
                       <UserIcon />
                     </div>
