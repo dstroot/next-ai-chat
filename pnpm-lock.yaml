@@ -69,8 +69,8 @@ importers:
         specifier: ^0.10.0
         version: 0.10.0
       ai:
-        specifier: 4.1.21
-        version: 4.1.21(react@19.0.0)(zod@3.24.1)
+        specifier: 4.1.24
+        version: 4.1.24(react@19.0.0)(zod@3.24.1)
       bcrypt-ts:
         specifier: ^5.0.3
         version: 5.0.3
@@ -108,8 +108,8 @@ importers:
         specifier: ^0.474.0
         version: 0.474.0(react@19.0.0)
       motion:
-        specifier: ^12.3.1
-        version: 12.3.1(react-dom@19.0.0(react@19.0.0))(react@19.0.0)
+        specifier: ^12.4.0
+        version: 12.4.0(react-dom@19.0.0(react@19.0.0))(react@19.0.0)
       nanoid:
         specifier: ^5.0.9
         version: 5.0.9
@@ -1654,8 +1654,8 @@ packages:
     engines: {node: '>=0.4.0'}
     hasBin: true
 
-  ai@4.1.21:
-    resolution: {integrity: sha512-w1v3T/fisoD1qRFz7CS7nE7mggeaxEpkEvWvVUWRem9lERgwh670OPhMPUSrdzTtCjMkOTrNkaecKoYAwvqM/A==}
+  ai@4.1.24:
+    resolution: {integrity: sha512-QJLU9lIrwxZqNz6C3m+MLbtklPyBVUNWDHmk38M8ZstHhHezHGEo0FLjDlKYo3cysshdSz8TFXBvXh+429Yopw==}
     engines: {node: '>=18'}
     peerDependencies:
       react: ^18 || ^19 || ^19.0.0-rc
@@ -2337,8 +2337,8 @@ packages:
     resolution: {integrity: sha512-Ld2g8rrAyMYFXBhEqMz8ZAHBi4J4uS1i/CxGMDnjyFWddMXLVcDp051DZfu+t7+ab7Wv6SMqpWmyFIj5UbfFvg==}
     engines: {node: '>=14'}
 
-  framer-motion@12.3.1:
-    resolution: {integrity: sha512-Br4a2YhdeEvdzMDX8ToVO+/Jbqm2Loo/8rMjizX1nejjBvRJGMfz+NW1qBo4WCHF26uIdES5MBztUlB4pIyfqQ==}
+  framer-motion@12.4.0:
+    resolution: {integrity: sha512-QX92ThRniev3YTkjXOV/7m9fXBRQ5xDDRWDinuU//Xkjh+q9ppg3Nb0b95xgJYd2AE0rgJ7eoihY+Z+jjSv22w==}
     peerDependencies:
       '@emotion/is-prop-valid': '*'
       react: ^18.0.0 || ^19.0.0
@@ -2946,8 +2946,8 @@ packages:
   motion-utils@12.0.0:
     resolution: {integrity: sha512-MNFiBKbbqnmvOjkPyOKgHUp3Q6oiokLkI1bEwm5QA28cxMZrv0CbbBGDNmhF6DIXsi1pCQBSs0dX8xjeER1tmA==}
 
-  motion@12.3.1:
-    resolution: {integrity: sha512-o25hkUR/dvOt7gPHqYnv3/rrDtzz6b8Khqkmed6Tn2u4m0ZU/0UIukWQBN7wSqTACLZVptX013N3yH+LtoNa2A==}
+  motion@12.4.0:
+    resolution: {integrity: sha512-5AlCJ5wrGIbxvPwR3R17/POKQH7JNHbLTwvbbj3adz63AZwuZx80i5b4eax4ED1l6fkYTQZo9sP2zAq3rdkUKQ==}
     peerDependencies:
       '@emotion/is-prop-valid': '*'
       react: ^18.0.0 || ^19.0.0
@@ -4997,7 +4997,7 @@ snapshots:
 
   acorn@8.14.0: {}
 
-  ai@4.1.21(react@19.0.0)(zod@3.24.1):
+  ai@4.1.24(react@19.0.0)(zod@3.24.1):
     dependencies:
       '@ai-sdk/provider': 1.0.7
       '@ai-sdk/provider-utils': 2.1.6(zod@3.24.1)
@@ -5816,7 +5816,7 @@ snapshots:
       cross-spawn: 7.0.3
       signal-exit: 4.1.0
 
-  framer-motion@12.3.1(react-dom@19.0.0(react@19.0.0))(react@19.0.0):
+  framer-motion@12.4.0(react-dom@19.0.0(react@19.0.0))(react@19.0.0):
     dependencies:
       motion-dom: 12.0.0
       motion-utils: 12.0.0
@@ -6660,9 +6660,9 @@ snapshots:
 
   motion-utils@12.0.0: {}
 
-  motion@12.3.1(react-dom@19.0.0(react@19.0.0))(react@19.0.0):
+  motion@12.4.0(react-dom@19.0.0(react@19.0.0))(react@19.0.0):
     dependencies:
-      framer-motion: 12.3.1(react-dom@19.0.0(react@19.0.0))(react@19.0.0)
+      framer-motion: 12.4.0(react-dom@19.0.0(react@19.0.0))(react@19.0.0)
       tslib: 2.8.1
     optionalDependencies:
       react: 19.0.0
